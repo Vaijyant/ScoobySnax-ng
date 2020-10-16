@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'ghost',
     loadChildren: () => import('../modules/ghost/ghost.module').then(m => m.GhostModule)
+  },
+  {
+    path: '**',
+    redirectTo: 'hero'
   }
 ];
 

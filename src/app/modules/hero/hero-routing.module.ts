@@ -19,7 +19,7 @@ const routes: Routes = [
       },
       {
         path: '**',
-        redirectTo: 'hero2'
+        redirectTo: 'hero-list'
       }
     ]
   },
