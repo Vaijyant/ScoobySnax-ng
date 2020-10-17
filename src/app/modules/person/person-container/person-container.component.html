@@ -1,0 +1,8 @@
+<mat-toolbar-row color="secondary">
+    <button *ngFor="let tab of tabs" (onClick)="onClick()" mat-button>
+        {{ tab.item }}
+    </button>
+</mat-toolbar-row>
+<div class="module">
+    <app-person-list [personList]="personList"></app-person-list>
+</div>
